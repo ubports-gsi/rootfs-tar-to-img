@@ -58,8 +58,8 @@ DO_COPY_SSH_KEY=false
 export ROOTFS_TAR="./rootfs.tar.gz"
 export AND_IMAGE="./system.img"
 rm $ROOTFS_TAR $AND_IMAGE
-wget "$ROOTFS_LINK" -O "$ROOTFS_TAR"
-wget "$SYSTEM_LINK" -O "$AND_IMAGE"
+wget "$ROOTFS_LINK" -O "$ROOTFS_TAR" 1>/dev/null
+wget "$SYSTEM_LINK" -O "$AND_IMAGE" 1>/dev/null
 
 if [ ! -f "$ROOTFS_TAR" ] || [ ! -f "$AND_IMAGE" ]; then
 	echo "Images not found!"
