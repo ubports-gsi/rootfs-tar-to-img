@@ -1,7 +1,9 @@
 #!/bin/bash
 
 ROOTFS_LINK="http://127.0.0.1/ci/job/ubports-gsi-rootfs-builder-debos-android9/lastSuccessfulBuild/artifact/ubuntu-touch-android9-armhf.tar.gz"
-SYSTEM_LINK="http://127.0.0.1/ci/job/ubports-gsi-systemimage/lastSuccessfulBuild/artifact/out-ubports_gsi_systemimage/target/product/ubport/system.img"
+# Sorry, I have no idea how to build it. HELP NEEDED
+#SYSTEM_LINK="http://127.0.0.1/ci/job/ubports-gsi-systemimage/lastSuccessfulBuild/artifact/out-ubports_gsi_systemimage/target/product/ubport/system.img"
+SYSTEM_LINK="http://oldpc/files/raw-:D/Documents/Porting/fajita/ubuntu-touch/GSI/unzipped/data/system.img"
 
 LOCATION="$(dirname "$(readlink -f "$0")")"
 
